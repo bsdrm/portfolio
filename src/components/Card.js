@@ -4,6 +4,8 @@ import { Flex } from 'rebass'
 import styled, {css} from 'styled-components';
 import bmg from '../images/bmg.PNG'
 import truck from '../images/truck.gif'
+import port from '../images/p.jpg'
+import spa from '../images/spa.PNG'
 
 class Card extends React.Component {
     
@@ -41,10 +43,31 @@ class Card extends React.Component {
             <img src={truck}/>
         </div>
     );
-    // case 'Portfolio':
-    //     return ();
-    // case 'SPA':
-    //     return ();
+    case 'Portfolio':
+        return (
+            <div className="portfolio">
+                <div className="links">
+                    <a href="https://github.com/bsdrm/portfolio" target="_blank">CODE</a>
+                    <a href="https://www.figma.com/file/osEvOD8OvyHZ6NVv9mjG8t/Portfolio-draft?node-id=0%3A1" target="_blank">FIGMA</a>
+                    <a href="https://vladthesoviet-bsdrm.herokuapp.com/" target="_blank">LIVE</a>
+                </div>
+                <h2>Portfolio</h2>
+                <p className="info">What you're seeing rn ^^ | React</p>
+                <img src={port}/>
+            </div>
+        );
+    case 'SPA':
+        return (
+            <div className="spa">
+                <div className="links">
+                    <a href="https://github.com/bsdrm/SPA-back" target="_blank">CODE</a>
+                    <a href="https://imgur.com/a/mIu2lI5" target="_blank">PIC</a>
+                </div>
+                <h2>SPA</h2>
+                <p className="info">Simple ManyToMany SPA<br />Java | React | Spring | REST</p>
+                <img src={spa}/>
+            </div>
+        );
     }
   }
 
@@ -170,5 +193,40 @@ const CardWrapper = styled(Flex)`
     .garbage img {
         width: 70%;
         margin-left: 30px;
+    }
+
+    .portfolio h2 {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .portfolio .links {
+        margin: 0px;
+        font-size: 13px;
+    }
+
+    .portfolio .info {
+        margin-top: 5px;
+    }
+
+    .portfolio img {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+
+    .spa .links a:nth-last-child(2) {
+        margin-left: 0px;
+    }
+
+
+    .spa img {
+        width: 100%;
+        margin: auto;
+        margin-top: 15px;
     }
 `

@@ -15,7 +15,7 @@ class Container extends React.Component {
                 </div>
                 <div className="right">
                     <h1>hi! i'm angelika</h1>
-                    <p>i'm trying to write code and the code is trying me</p>
+                    <p>i'm trying to write code and the code is trying me 🙄</p>
                     <div className="logos">
                         <a href="https://github.com/bsdrm" target="_blank">
                             <img
