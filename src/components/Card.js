@@ -28,7 +28,6 @@ class Card extends React.Component {
                 <h2>BeMyGym</h2>
                 <p className="info">A Web App for booking gyms in Poznań<br/>
                 React | Firebase</p>
-                <img src={bmg}/>
             </div>
         );
     case 'GarbageTruck':
@@ -40,7 +39,6 @@ class Card extends React.Component {
             </div>
             <h2>Intelligent Garbage Truck</h2>
             <p className="info">A*Star implementation | Python | Pygame | Pyke</p>
-            <img src={truck}/>
         </div>
     );
     case 'Portfolio':
@@ -53,7 +51,6 @@ class Card extends React.Component {
                 </div>
                 <h2>Portfolio</h2>
                 <p className="info">What you're seeing rn ^^ | React</p>
-                <img src={port}/>
             </div>
         );
     case 'SPA':
@@ -64,8 +61,7 @@ class Card extends React.Component {
                     <a href="https://imgur.com/a/mIu2lI5" target="_blank">PIC</a>
                 </div>
                 <h2>SPA</h2>
-                <p className="info">Simple ManyToMany SPA<br />Java | React | Spring | REST</p>
-                <img src={spa}/>
+                <p className="info">Simple ManyToMany SPA<br />Employees can be assigned to multiple projects{"\n"}<br />Java | React | Spring | REST | MySQL</p>
             </div>
         );
     }
@@ -164,69 +160,12 @@ const CardWrapper = styled(Flex)`
         flex-direction: column;
     }
 
-    .bemygym img {
-        width: 95%;
-        height: auto;
-        margin: auto;
-        border-radius: 20px;
-        margin-top: 10px;
-    }
-
-    .garbage h2 {
-        font-size: 15px;
-        margin: 0px;
-    }
-
-    .garbage .links {
-        margin: 0px;
-        font-size: 13px;
-    }
 
     .garbage .links a:nth-last-child(2) {
         margin-left: 0px;
     }
 
-    .garbage .info {
-        margin: 0px;
-    }
-
-    .garbage img {
-        width: 70%;
-        margin-left: 30px;
-    }
-
-    .portfolio h2 {
-        font-size: 20px;
-        margin: 0px;
-    }
-
-    .portfolio .links {
-        margin: 0px;
-        font-size: 13px;
-    }
-
-    .portfolio .info {
-        margin-top: 5px;
-    }
-
-    .portfolio img {
-        width: 70%;
-        height: auto;
-        margin: auto;
-        border-radius: 20px;
-        margin-left: 30px;
-        margin-top: 10px;
-    }
-
-
     .spa .links a:nth-last-child(2) {
         margin-left: 0px;
-    }
-
-
-    .spa img {
-        width: 100%;
-        margin: auto;
-        margin-top: 15px;
     }
 `
