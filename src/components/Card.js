@@ -61,7 +61,7 @@ class Card extends React.Component {
                     <a href="https://imgur.com/a/mIu2lI5" target="_blank">PIC</a>
                 </div>
                 <h2>SPA</h2>
-                <p className="info">Simple ManyToMany SPA<br />Employees can be assigned to multiple projects{"\n"}<br />Java | React | Spring | REST | MySQL</p>
+                <p className="info">Simple ManyToMany SPA<br />Employees can be assigned to multiple projects<br />Java | React | Spring | REST | MySQL</p>
             </div>
         );
     }
